@@ -1,0 +1,25 @@
+#######
+# This is simple read the last Lottery Numbers for Austria "6aus45" and Germany "6aus49"
+#
+#       Remember to put this plugins into the "config.yml" file 
+#######
+#
+#
+# Das ist ein einfaches Siri liest die Lottozahlen vor - Plugin.
+# Funktioniert derzeit mit 6aus45 (Österreich) und 6aus49 (Deutschland)
+# 
+# den Code bitte nicht genauer ansehen, bin absoluter Ruby Neuling 
+# ich weis, ich sollte ein "Ruby for Dummies"-Buch lesen
+# 
+#      ladet das Plugin in der "config.yml" datei !
+#
+#######
+## ##  WIE ES FUNKTIONIERT 
+#
+# sagt einfach einen Satz mit "Lotto" für die Österreichischen 6aus45 Zahlen
+# oder "Lotto" + "Deutschland" für Deutschlands 6aus49
+# 
+# bei Fragen Twitter: @Muhkuh0815
+# oder github.com/muhkuh0815
+#
+#######
