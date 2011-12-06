@@ -8,13 +8,13 @@ require 'timeout'
 
 #######
 #
-# This is simple read the last Lottery Numbers for Austria "6aus45" and Germany "6aus49"
+# This is simple read the latest Lottery Numbers for Austria "6aus45" and Germany "6aus49"
 #
 #       Remember to put this plugins into the "config.yml" file 
 #######
 #
 # Das ist ein einfaches Siri liest die Lottozahlen vor - Plugin.
-# Funktioniert derzeit mit 6aus45 (…sterreich) und 6aus49 (Deutschland)
+# Funktioniert derzeit mit 6aus45 (Österreich) und 6aus49 (Deutschland)
 # 
 # den Code bitte nicht genauer ansehen, bin absoluter Ruby Neuling 
 # ich weis, ich sollte ein "Ruby for Dummies"-Buch lesen
@@ -24,11 +24,16 @@ require 'timeout'
 #######
 ## ##  WIE ES FUNKTIONIERT 
 #
-# sagt einfach einen Satz mit "Lotto" fŸr die …sterreichischen 6aus45 Zahlen
-# oder "Lotto" + "Deutschland" fŸr Deutschlands 6aus49
+# sagt einfach einen Satz mit "Lotto" für die Österreichischen 6aus45 Zahlen
+# oder "Lotto" + "Deutschland" für Deutschlands 6aus49
 # 
 # bei Fragen Twitter: @Muhkuh0815
-# oder github.com/muhkuh0815
+# oder github.com/muhkuh0815/SiriProxy-Lotto
+#
+#
+#### ToDo
+#
+# Gewinnabfrage
 #
 #######
 
@@ -112,7 +117,7 @@ if shaf =="timeout"
     say "6 aus 49 - Ziehung vom: " + saytag +" den " +datt+ "." + datm +"." + datj, spoken: "6 aus 49, Ziehung vom: " + saytag +" den " +datt+ "ten " + datm +"ten " + datj
     say "GZ: " + z1 + " " + z2 +"  "+z3+"  " +z4+"  " +z5+"  " +z6, spoken: "Gewinnzahlen: " + z1 +", "+ z2 +",  "+z3+",  " +z4+",  " +z5+",  " +z6
     say "Zusatzzahl: " + zz + "  Superzahl: " + sz
-    say "alle Angaben ohne GewÃ¤hr"
+    say "alle Angaben ohne Gewähr"
 end    
 
 request_completed
@@ -189,7 +194,7 @@ listen_for /(Lotto|Lottozahlen|Ziehung|Lottoziehung|Lauter|Sechs aus 45|Sex aus 
     say "6 aus 45 - Ziehung vom: " + saytag +" den " +datt+ "." + datm +"." + datj, spoken: "6 aus 45, Ziehung vom: " + saytag +" den " +datt+ "ten " + datm +"ten " + datj
     say "GZ: " + z1 +"  "+ z2 +"  "+z3+"  " +z4+"  " +z5+"  " +z6, spoken: "Gewinnzahlen: " + z1 +",  "+ z2 +",  "+z3+",  " +z4+",  " +z5+",  " +z6
     say "ZZ: " + zz + " Joker: " + jo, spoken: "Zusatzzahl: " + zz + ", Tschoker: " + joss
-    say "alle Angaben ohne GewÃ¤hr"
+    say "alle Angaben ohne Gewähr"
     
     request_completed
 end
