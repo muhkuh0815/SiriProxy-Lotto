@@ -10,7 +10,7 @@ require 'timeout'
 #
 # This is simple read the latest Lottery Numbers for Austria "6aus45" and Germany "6aus49"
 #
-#       Remember to put this plugins into the "config.yml" file 
+#       Remember to put this plugins into the "./siriproxy/config.yml" file 
 #######
 #
 # Das ist ein einfaches Siri liest die Lottozahlen vor - Plugin.
@@ -19,7 +19,7 @@ require 'timeout'
 # den Code bitte nicht genauer ansehen, bin absoluter Ruby Neuling 
 # ich weis, ich sollte ein "Ruby for Dummies"-Buch lesen
 # 
-#      ladet das Plugin in der "config.yml" datei !
+#      ladet das Plugin in der "./siriproxy/config.yml" datei !
 #
 #######
 ## ##  WIE ES FUNKTIONIERT 
@@ -27,8 +27,9 @@ require 'timeout'
 # sagt einfach einen Satz mit "Lotto" für die Österreichischen 6aus45 Zahlen
 # oder "Lotto" + "Deutschland" für Deutschlands 6aus49
 # 
-# bei Fragen Twitter: @Muhkuh0815
+# bei Fragen Twitter: @muhkuh0815
 # oder github.com/muhkuh0815/SiriProxy-Lotto
+# Video http://www.youtube.com/watch?v=Q6sedYlee1Q
 #
 #
 #### ToDo
@@ -48,6 +49,7 @@ class SiriProxy::Plugin::Lotto < SiriProxy::Plugin
     def docs
     end
     
+# german Looto numbers 4au49
     
     listen_for /(Lotto|Lottozahlen|Ziehung|Lottoziehung|Lauter|Sechs aus 49|Sex aus 49).*(Deutschland|Piefke)/i do
     
@@ -124,6 +126,7 @@ request_completed
 end
 
 
+# Lotto numbers austria 6aus45
 
 listen_for /(Lotto|Lottozahlen|Ziehung|Lottoziehung|Lauter|Sechs aus 45|Sex aus 45)/i do
     shaf = ""
