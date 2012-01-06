@@ -1,30 +1,59 @@
-#######
-#
-# This is simple read the latest Lottery Numbers for Austria "6aus45" and Germany "6aus49"
-#
-#       Remember to put this plugins into the "config.yml" file 
-#######
-#
-# Das ist ein einfaches Siri liest die Lottozahlen vor - Plugin.
-# Funktioniert derzeit mit 6aus45 (sterreich) und 6aus49 (Deutschland)
-# 
-# den Code bitte nicht genauer ansehen, bin absoluter Ruby Neuling 
-# ich weis, ich sollte ein "Ruby for Dummies"-Buch lesen
-# 
-#      ladet das Plugin in der "config.yml" datei !
-#
-#######
-## ##  WIE ES FUNKTIONIERT 
-#
-# sagt einfach einen Satz mit "Lotto" für die Österreichischen 6aus45 Zahlen
-# oder "Lotto" + "Deutschland" für Deutschlands 6aus49
-# 
-# bei Fragen Twitter: @muhkuh0815
-# oder github.com/muhkuh0815/SiriProxy-Lotto
-#
-#
-#### ToDo
-#
-# Gewinnabfrage
-#
-#######
+###
+# siriproxy-lotto  Plugin
+
+This is simple read the latest Lottery Numbers for Austrias "6aus45", Germany "6aus49" and "Euromillionen"
+
+       Remember to load the plugin in the "config.yml" file !
+
+
+Das ist ein einfaches Siri liest die Lottozahlen vor - Plugin.
+Funktioniert derzeit mit 6aus45 (Österreich), 6aus49 (Deutschland) und Euromillionen.
+
+den Code bitte nicht genauer ansehen, bin absoluter Ruby Neuling 
+ich weis, ich sollte ein "Ruby for Dummies"-Buch lesen
+ 
+      ladet das Plugin in der "config.yml" datei !
+
+###
+# WIE ES FUNKTIONIERT 
+
+sagt einfach einen Satz mit "Lotto" für die Österreichischen 6aus45 Zahlen
+"Lotto" + "Deutschland" für Deutschlands 6aus49
+oder "Euromillionen"
+
+
+###
+# Installation
+
+Ihr benötigt Siriproxy 0.3.0:
+
+einfach folgende Zeilen in die User/xxx/.siriproxy/config.yml Datei einfügen (Vorsicht mit Zeilenumbrüchen!!)
+
+- name: 'Lotto'
+  git: 'git://github.com/muhkuh0815/SiriProxy-Lotto.git'
+
+danach einmal Siriproxy update
+die Plugin Dateien liegen dann in
+/User/xxx/.rvm/gems/ruby-1.9.3/bundler/gems/SiriProxy-Lotto
+Vorsicht beim editieren, bei jedem Siriproxy update werden sie wieder überschrieben.
+
+
+Falls ihr das Plugin für euch anpassen wollt empfehle ich die Plugindateien von github runterzuladen und sie in
+/User/xxx/Siriproxy/plugins/siriproxy-lotto
+zu kopieren.
+Der richtige Eintrag in der config.yml Datei wäre dann:
+
+- name: 'Lotto'
+  path: '/Users/xxx/SiriProxy/plugins/siriproxy-lotto'
+
+
+###
+# ToDo
+
+Gewinnabfrage
+
+###
+# Kontakt
+
+bei Fragen Twitter: @muhkuh0815
+oder github.com/muhkuh0815/SiriProxy-Lotto
