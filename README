@@ -3,7 +3,7 @@
 
 This is simple read the latest Lottery Numbers for Austrias "6aus45", Germany "6aus49" and "Euromillionen"
 
-       Remember to load the plugin in the "config.yml" file !
+       Remember to load the plugin in the "./siriproxy/config.yml" file !
 
 
 Das ist ein einfaches Siri liest die Lottozahlen vor - Plugin.
@@ -12,7 +12,7 @@ Funktioniert derzeit mit 6aus45 (Österreich), 6aus49 (Deutschland) und Euromill
 den Code bitte nicht genauer ansehen, bin absoluter Ruby Neuling 
 ich weis, ich sollte ein "Ruby for Dummies"-Buch lesen
  
-      ladet das Plugin in der "config.yml" datei !
+      ladet das Plugin in der "./siriproxy/config.yml" datei !
 
 ###
 # WIE ES FUNKTIONIERT 
@@ -57,3 +57,4 @@ Gewinnabfrage
 
 bei Fragen Twitter: @muhkuh0815
 oder github.com/muhkuh0815/SiriProxy-Lotto
+Video preview: http://www.youtube.com/watch?v=Q6sedYlee1Q
